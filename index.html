@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>Single page application</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="content">
     <div class="main">
         <div class="navbar">
             <ul> <a class="anch-link" href="#">Jayesh Bellani</a>
-                <a class="anch-link" href="#container1">Home</a>
+                <a class="anch-link" href="index.html">Home</a>
                 <a class="anch-link" href="#slideshow-container1">Photos</a>
                 <a class="anch-link" href="#about1">About Us</a>
+                <a class="anch-link" href="#service1">Services</a>
             </ul>
         </div>
         <div class="work">
@@ -132,7 +134,7 @@
                 </p>
 
             </div>
-        </div>
+        </div><br>
         <div class="slideshow-container" id="slideshow-container1">
 
             <div class="mySlides fade">
@@ -186,34 +188,86 @@
 
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
-
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+            </div>
         </div>
-        <br>
 
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
+       
+
+        <!-- <div class="services">
+            <h2 style="text-align: center;">Our Services</h2>
+            <h3 style="text-align: center;">SUPPORTING PROTECTED AREAS</h3>
+            <p>We’re working with local people and government agencies to increase the coverage of protected areas.
+                We're also helping to strengthen the way protected areas are managed, and improving connections between
+                them so wildlife can move more freely.</p>
+              <h3 style="text-align: center;">CLAMPING DOWN ON THE ILLEGAL WILDLIFE TRADE</h3>  
+              <p>We’re tackling the illegal trade and over-exploitation of wildlife by strengthening regulations and making sure they’re properly enforced.</p>
+              <h3 style="text-align: center;">INFLUENCING CONSUMER CHOICE</h3>
+              <p>We are influencing markets and consumer choices that drive demand for wildlife products.</p>  
+        </div> -->
+
+
+        <div class="service" id="service1">
+            <div class="card card1">
+                <img src="images/5jpzsruzta_tigers_priority_77221825.jpg" alt="Denim Jeans" >
+                <h1>SUPPORTING PROTECTED AREAS</h1>
+                <!-- <p class="price">$19.99</p> -->
+                <p>We’re working with local people and government agencies to increase the coverage of protected areas.
+                    We're also helping to strengthen the way protected areas are managed, and improving connections
+                    between
+                    them so wildlife can move more freely.</p>
+                <!-- <p><button>Add to Cart</button></p> -->
+            </div>
+            <div class="card card1">
+                <img src="images/5jpzsruzta_tigers_priority_77221825.jpg" alt="Denim Jeans" >
+                <h1>CLAMPING DOWN ON THE ILLEGAL WILDLIFE TRADE</h1>
+                <!-- <p class="price">$19.99</p> -->
+                <p>We’re tackling the illegal trade and over-exploitation of wildlife by strengthening regulations and making sure they’re properly enforced.</p>
+                <!-- <p><button>Add to Cart</button></p> -->
+            </div>
+            <div class="card card1">
+                <img src="images/5jpzsruzta_tigers_priority_77221825.jpg" alt="Denim Jeans" >
+                <h1>INFLUENCING CONSUMER CHOICE</h1>
+                <!-- <p class="price">$19.99</p> -->
+                <p>We are influencing markets and consumer choices that drive demand for wildlife products.</p>
+                <!-- <p><button>Add to Cart</button></p> -->
+            </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
         <div class="about" id="about1">
-            <h3 style="text-align: center;">OUR VISION</h3>
-            <p style="text-align: center;">Saves wildlife and wild places in India through science, conservation action,
+            <h3 >OUR VISION</h3>
+            <p >Saves wildlife and wild places in India through science, conservation action,
                 education, and inspiring people to value nature.</p>
             <br>
             <br>
 
-            <h3 style="text-align: center;"> OUR MISSION</h3>
-            <p style="text-align: center;">Envisions a world where wildlife is valued by societies that embrace and
+            <h3> OUR MISSION</h3>
+            <p >Envisions a world where wildlife is valued by societies that embrace and
                 benefit from the diversity and integrity of life on earth and therefore enable biodiversity conservation
                 in healthy lands and seas.</p>
-            <h2 style="text-align: center;">About</h2>
-            <p class="decor-text">Our company is a Section 25 non-profit company incorporated in India and compliant with all Indian
+            <h2>About</h2>
+            <p class="decor-text">Our company is a Section 25 non-profit company incorporated in India and compliant
+                with all Indian
                 regulations. In accordance with the global mission, WCS-India’s overarching goal is the protection and
                 conservation of the natural environment, its flora and fauna, and in particular the preservation of
                 wildlife and wild places in India. We combine wildlife conservation action and strategic policy
@@ -231,6 +285,12 @@
                 forests of Karnataka and Kerala, and the tropical deciduous forests of Eastern Ghats, to the arid
                 grasslands of Rajasthan; from the unique riverine habitats of the North and North East India landscape
                 to the vibrant coral reefs of the Lakshadweep Islands.</p>
+            <div class="logo">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
         </div>
     </div>
 
